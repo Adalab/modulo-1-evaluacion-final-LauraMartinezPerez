@@ -1,1 +1,11 @@
 @use 'core/reset';
+@use 'core/variables' as vars;
+@use 'layout/header';
+@use 'layout/hero';
+@use 'layout/section-main';
+@use 'layout/section-aside';
+@use 'layout/footer';
+
+.prueba {
+    background-color: vars.$color-bg-aside;
+}
