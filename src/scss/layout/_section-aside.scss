@@ -1,11 +1,13 @@
 @use "../core/variables" as vars;
 
 .aside-container {
+    background-color: vars.$color-bg-aside;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
     width: 100%;
+    padding: 20px 0;
 }
 
 .aside-text {
@@ -23,6 +25,7 @@
 }
 
 .aside-section {
+    
     display: grid;
     grid-template-columns: 1fr;
     /* grid-template-rows: 80px 40px 80px 40px 80px 40px; */
