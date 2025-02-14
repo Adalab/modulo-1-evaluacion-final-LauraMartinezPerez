@@ -1,1 +1,35 @@
 @use "../core/variables" as vars;
+
+*{
+    color: vars.$color-text-white;
+}
+
+.hero {
+    height: 100vh;
+    background-image: url(/images/cover.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100vh;
+    background-position: 80% 0;
+    display: flex;
+    justify-content: center;
+    
+    
+        &__text {
+        
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 350px;
+            margin-left: 50px;
+            margin-right: 50px;
+            text-align: center;
+        }
+
+                &__text--title {
+                font-family: vars.$font-title;
+                }
+                &__text--par {
+                font-family: vars.$font-main;
+                }
+}
+

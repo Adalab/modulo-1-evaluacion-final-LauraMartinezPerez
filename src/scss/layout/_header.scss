@@ -1,1 +1,9 @@
 @use "../core/variables" as vars;
+
+.header {
+    background-color: vars.$color-buttons;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    padding: 20px;
+}
