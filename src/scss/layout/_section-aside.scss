@@ -25,7 +25,8 @@
 .aside-section {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 80px 40px 80px 40px 80px 40px;
+    /* grid-template-rows: 80px 40px 80px 40px 80px 40px; */
+    grid-template-rows: 25% 10% 25% 10% 25% 10%;
     gap: 10px;
 
 }
@@ -83,5 +84,5 @@
     text-align: center;
     color: vars.$color-text-white;
     background-color: vars.$color-buttons;
-    margin-bottom: 20px;
+    margin-top: 40px;
 }
