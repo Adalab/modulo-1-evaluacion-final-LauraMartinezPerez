@@ -1,12 +1,11 @@
 @use "../core/variables" as vars;
 
-*{
-    color: vars.$color-text-white;
-}
+
 html {
     scroll-behavior: smooth;
   }
 .hero {
+    color: vars.$color-text-white;
     height: 100vh;
     background-image: url(/images/cover.jpeg);
     background-repeat: no-repeat;
