@@ -36,9 +36,11 @@ html {
 
                 .text-title {
                 font-family: vars.$font-title;
+                color: vars.$color-text-white;
                 }
                 .text-par {
                 font-family: vars.$font-main;
+                color: vars.$color-text-white;
                 }
 
                 &__container--scroll {
