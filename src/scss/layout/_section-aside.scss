@@ -25,59 +25,66 @@
 }
 
 .aside-section {
-    
     display: grid;
-    grid-template-columns: 1fr;
-    /* grid-template-rows: 80px 40px 80px 40px 80px 40px; */
-    grid-template-rows: 25% 10% 25% 10% 25% 10%;
-    gap: 10px;
-
-}
-.aside-img1 {
-    width: 20%;
-    border-radius: 50%;
-    margin-left: 40%;
-
-
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+   
 }
 
-.aside-supplier1 {
-    font-family: vars.$font-title;
-    color: vars.$color-text-black;
-    display: flex;
-    justify-content: center;
-    align-content: start;
+    .supplies1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
-}
-.aside-img2 {
-    width: 20%;
-    border-radius: 50%;
-    margin-left: 40%;
-}
+        .aside-img1 {
+            width: 20%;
+            border-radius: 50%;
+        }
 
-.aside-supplier2 {
-    font-family: vars.$font-title;
-    color: vars.$color-text-black;
-    display: flex;
-    justify-content: center;
-    align-content: start;
-}
-.aside-img3 {
-    width: 20%;
-    border-radius: 50%;
-    margin-left: 40%;
-}
+        .aside-supplier1 {
+            font-family: vars.$font-title;
+            color: vars.$color-text-black;
+        }
 
-.aside-supplier3 {
-    font-family: vars.$font-title;
-    color: vars.$color-text-black;
-    display: flex;
-    justify-content: center;
-    align-content: start;
-}
+    .supplies2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
+        .aside-img2 {
+            width: 20%;
+            border-radius: 50%;
+        }
+
+        .aside-supplier2 {
+            font-family: vars.$font-title;
+            color: vars.$color-text-black;
+        }
+
+    .supplies3 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+            .aside-img3 {
+                width: 20%;
+                border-radius: 50%;
+            }
+
+            .aside-supplier3 {
+                font-family: vars.$font-title;
+                color: vars.$color-text-black;
+            }
 
 .aside-button {
+    color: vars.$color-text-white;
+    background-color: vars.$color-buttons;
     width: 200px;
     padding: 12px;
     border: none;
@@ -85,7 +92,5 @@
     font-family: vars.$font-main;
     font-size: 20px;
     text-align: center;
-    color: vars.$color-text-white;
-    background-color: vars.$color-buttons;
-    margin-top: 40px;
+    margin-top: 0px;
 }
