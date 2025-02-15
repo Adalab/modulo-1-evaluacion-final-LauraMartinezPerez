@@ -1,9 +1,6 @@
 @use "../core/variables" as vars;
 
 
-html {
-    scroll-behavior: smooth;
-  }
 .hero {
     color: vars.$color-text-white;
     height: 100vh;
@@ -20,6 +17,7 @@ html {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        
         
     }
     
@@ -48,6 +46,7 @@ html {
                 justify-content: center;
                 align-items: center;
                 margin-top: 10px;
+                
             }        
 
                     .button-down {
@@ -69,3 +68,64 @@ html {
 
 }
 
+@media (min-width: 768px) {
+
+    .text-title {
+        font-size: 80px;
+        }
+        .text-par {
+            font-size: 30px;
+        }
+        .hero {
+            color: vars.$color-text-white;
+            height: 70vh;
+            background-image: url(/images/cover.jpeg);
+            background-repeat: no-repeat;
+            background-size: ccover;
+            background-position: 50% 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+
+            &__container--scroll {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 10px;
+                
+            }        
+
+                    .button-down {
+                    margin-top: 0px;
+                    border: none;
+                    border-radius: 50%;
+                    height: 60px;
+                    width: 60px;              
+                    }
+
+                    .scroll-down {
+                    display: flex;
+                    position: relative;
+                    z-index: 1;
+                    width: 70%;
+                    bottom: 40px;
+                    left: 9px;
+                    }
+            
+        }
+        .container-text-par {
+            width: 60%;
+        }
+
+        .button-down {
+            margin-top: 0px;
+            border: none;
+            border-radius: 50%;
+            height: 70px;
+            width: 70px;              
+            }
+
+           
+
+}
