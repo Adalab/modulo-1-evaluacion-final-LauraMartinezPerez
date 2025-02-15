@@ -1,1 +1,55 @@
 @use "../core/variables" as vars;
+
+
+
+.footer {
+    background-color: vars.$color-bg-footer;
+    color: vars.$color-text-white;
+    font-family: vars.$font-main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 50px;
+    width: 100%;
+
+    &__supplies {
+        margin-top: -60px;
+        text-align: center;
+        line-height: 30px;
+
+    }
+
+    &__rrss {
+        text-align: center;
+        line-height: 30px;
+    }
+
+    &__copy {
+        text-align: center;
+        line-height: 30px;
+    }
+
+
+    }
+
+    .footer-arrow {
+        position: relative;
+        z-index: 1;
+        top: -70px;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+
+ }
+
+    .arrow-container {
+            background-color: vars.$color-text-white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+

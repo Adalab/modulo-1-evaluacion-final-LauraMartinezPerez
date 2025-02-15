@@ -7,7 +7,8 @@
     align-items: center;
     gap: 20px;
     width: 100%;
-    padding: 20px 0;
+    padding-top: 20px;
+    padding-bottom: 30px;
 }
 
 .aside-text {
@@ -25,13 +26,14 @@
 }
 
 .aside-section {
+
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 20px;
    
 }
 
-    .supplies1 {
+    .aside-supplies {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -41,43 +43,30 @@
         .aside-img1 {
             width: 20%;
             border-radius: 50%;
-        }
+            }
 
         .aside-supplier1 {
             font-family: vars.$font-title;
             color: vars.$color-text-black;
-        }
+            }
 
-    .supplies2 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
 
         .aside-img2 {
             width: 20%;
             border-radius: 50%;
-        }
+            }
 
         .aside-supplier2 {
             font-family: vars.$font-title;
             color: vars.$color-text-black;
-        }
-
-    .supplies3 {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-            .aside-img3 {
-                width: 20%;
-                border-radius: 50%;
             }
 
-            .aside-supplier3 {
+        .aside-img3 {
+            width: 20%;
+            border-radius: 50%;
+            }
+
+        .aside-supplier3 {
                 font-family: vars.$font-title;
                 color: vars.$color-text-black;
             }
