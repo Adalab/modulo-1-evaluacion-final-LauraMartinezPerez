@@ -3,8 +3,6 @@
 .footer-arrow {
     position: relative;
     z-index: 1;
-    top: 50%
-    px;
     display: flex;
     justify-content: center;
     margin: 0 auto;
@@ -89,7 +87,7 @@
 
 @media (min-width: 768px) {
    
-    .footer-arrow {
+/*     .footer-arrow {
         position: relative;
         z-index: 1;
  
@@ -97,7 +95,7 @@
         justify-content: center;
         margin: 0 auto;
     
-    }
+    } */
 
     .aside-section {
         display: grid;
