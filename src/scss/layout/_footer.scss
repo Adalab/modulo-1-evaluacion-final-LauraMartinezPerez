@@ -33,23 +33,116 @@
 
     }
 
-    .footer-arrow {
-        position: relative;
-        z-index: 1;
-        top: -70px;
-        display: flex;
-        justify-content: center;
-        margin: 0 auto;
 
- }
 
-    .arrow-container {
-            background-color: vars.$color-text-white;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
+        @media (min-width: 768px) {
+   
+
+            .footer {
+                background-color: brown;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 100px;
+                padding: 50px;
+                width: 100%;
+            }
+            .footer__copy {
+                background-color: chartreuse;
+                
+             
+            }
+
+            .footer__supplies{
+                background-color: cornflowerblue;
+                
+              
+            }
+
+            .footer__rrss {
+                background-color: darkseagreen;
+                
+               
+            }
+
+            .footer-arrow {
+                position: relative;
+                z-index: 1;
+                top: -150px;
+                left: 0px;
+                display: flex;
+                justify-content: center;
+                margin: 0 auto;
+        
+         }
+
+
+
+
+
+   /*          .footer {
+                background-color: vars.$color-bg-footer;
+                color: vars.$color-text-white;
+                font-family: vars.$font-main;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                gap: 20px;
+                height: 300px;
+                padding: 0px;
+                width: 100%;
+            }
+
+            .footer-arrow {
+                position: relative;
+                z-index: 1;
+                top: -150px;
+                left: 320px;
+                display: flex;
+                justify-content: center;
+                margin: 0 auto;
+        
+         }
+        
+         .footer__copy {
+
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            bottom: 30px;
+            right: 580px;
             display: flex;
+            flex-direction: column;
             justify-content: center;
-            align-items: center;
+            text-align: start;
+            margin: 0 auto;
         }
 
+        .footer__rrss {
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            bottom: 30px;
+            left: 150px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: start;
+            margin: 0 auto;
+        }
+
+        .footer__supplies {
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            bottom: 0px;
+            left: 120px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: start;
+            margin: 0 auto;
+        } */
+
+        }

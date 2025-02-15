@@ -1,5 +1,26 @@
 @use "../core/variables" as vars;
 
+.footer-arrow {
+    position: relative;
+    z-index: 1;
+    top: 50%
+    px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+
+}
+
+.arrow-container {
+        background-color: vars.$color-text-white;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
 .aside-container {
     background-color: vars.$color-bg-aside;
     display: flex;
@@ -40,36 +61,18 @@
         align-items: center;
     }
 
-        .aside-img1 {
+        .aside-img {
             width: 20%;
             border-radius: 50%;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
             }
 
-        .aside-supplier1 {
+        .aside-supplier {
             font-family: vars.$font-title;
             color: vars.$color-text-black;
+            font-size: 14px;
             }
 
-
-        .aside-img2 {
-            width: 20%;
-            border-radius: 50%;
-            }
-
-        .aside-supplier2 {
-            font-family: vars.$font-title;
-            color: vars.$color-text-black;
-            }
-
-        .aside-img3 {
-            width: 20%;
-            border-radius: 50%;
-            }
-
-        .aside-supplier3 {
-                font-family: vars.$font-title;
-                color: vars.$color-text-black;
-            }
 
 .aside-button {
     color: vars.$color-text-white;
@@ -82,4 +85,45 @@
     font-size: 20px;
     text-align: center;
     margin-top: 0px;
+}
+
+@media (min-width: 768px) {
+   
+    .footer-arrow {
+        position: relative;
+        z-index: 1;
+ 
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    
+    }
+
+    .aside-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        height: 200px;
+        padding-top: 30px;
+    }
+
+    .aside-img {
+        width: 60%;
+        border-radius: 50%;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+
+    .aside-supplier {
+        font-family: vars.$font-title;
+        color: vars.$color-text-black;
+        font-size: 18px;
+        margin-top: 5px;
+        
+        }
+
+    .aside-text__subtitle {
+        font-size: 15px;
+    }
+    .aside-text__title {
+        font-size: 40px;
+    }
 }
