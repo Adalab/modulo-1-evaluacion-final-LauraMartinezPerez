@@ -1,6 +1,6 @@
 @use "../core/variables" as vars;
 
-.main-container {
+/* .main-container {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -43,6 +43,82 @@
     background-color: vars.$color-text-white;
     margin: 20px;
 }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+.main-container {
+    padding: 0 50px;
+
+    }
+}
+
+@media (min-width: 1024px) {
+    .main-container {
+        padding: 0 50px;
+    
+        }
+} */
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    margin: 20px 0;
+
+}
+
+.main-title {
+    font-family: vars.$font-main;
+    color: vars.$color-buttons;
+    padding-left: 20px;
+    font-size: 18px;
+
+}
+
+.main-text{
+    font-family: vars.$font-title;
+    color: vars.$color-text-black;
+    padding-left: 20px;
+    font-size: 22px;
+
+    &__par {
+        color: vars.$color-subtext-aside;
+        font-family: vars.$font-main;
+        font-size: 22px;
+    }
+}
+
+
+.main-button {
+    width: 160px;
+    padding: 12px;
+    border: 3px solid vars.$color-buttons;
+    border-radius: 50px;
+    font-family: vars.$font-main;
+    font-size: 20px;
+    text-align: center;
+    color: vars.$color-buttons;
+    background-color: vars.$color-text-white;
+    margin: 20px;
+    background: vars.$color-text-white;
+    transition: ease 0.5s, color ease 0.5s;
+    &:hover {
+        background-color: vars.$color-buttons;
+        border: 3px solid vars.$color-bg-aside;
+        transform: scale(1.2);
+    }
+    a {
+        &:hover {
+            color: vars.$color-text-white;}
+    }
+}
+
+
+
+
+
+
 
 @media (min-width: 768px) and (max-width: 1023px) {
 

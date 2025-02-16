@@ -70,8 +70,21 @@
         font-size: 20px;
         text-align: center;
         margin-top: 0px;
-    }
+        transition: ease 0.5s, color ease 0.5s;
+        
+        &:hover {
+            background-color: vars.$color-text-white;
+            border: 3px solid vars.$color-buttons;
+            transform: scale(1.2);
+            }
+            
+            a {
+                &:hover {
+                    color: vars.$color-buttons;}
 
+            }
+    }
+  
     .aside-arrow {
         position: relative;
         top: 25px;
