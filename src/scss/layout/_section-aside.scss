@@ -1,7 +1,6 @@
 @use "../core/variables" as vars;
 
 
-
 .aside-container {
     background-color: vars.$color-bg-aside;
     display: flex;
@@ -10,7 +9,7 @@
     gap: 20px;
     width: 100%;
     padding-top: 20px;
-    padding-bottom: 20px;
+
 }
 
 .aside-text {
@@ -27,7 +26,7 @@
     }
 }
 
-.aside-section {
+.aside-grid-section {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     align-content: center;
@@ -37,7 +36,6 @@
 
     .aside-supplies {
         display: flex;
-        flex: 1;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -54,44 +52,44 @@
         }
 
 
-
-.aside-button {
-    color: vars.$color-text-white;
-    background-color: vars.$color-buttons;
-    width: 200px;
-    padding: 12px;
-    border: none;
-    border-radius: 50px;
-    font-family: vars.$font-main;
-    font-size: 20px;
-    text-align: center;
-    margin-top: 0px;
-}
-
-.footer-arrow {
+.container-button-arrow {
     display: flex;
-    width: 100%;
-    justify-content: center;
-    position: relative;
-    top: 130px;
-    margin: 0px auto;
-}
-.arrow-container {
-    background-color: vars.$color-text-white;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    width: 100%;
+
 }
+    .aside-button {
+        color: vars.$color-text-white;
+        background-color: vars.$color-buttons;
+        width: 200px;
+        padding: 12px;
+        border: none;
+        border-radius: 50px;
+        font-family: vars.$font-main;
+        font-size: 20px;
+        text-align: center;
+        margin-top: 0px;
+    }
+
+    .aside-arrow {
+        position: relative;
+        top: 25px;
+        margin: 0px auto;
+    }
+    .arrow-circle {
+        background-color: vars.$color-text-white;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
 @media (min-width: 768px) {
 
-    .arrow-container {
-        position: relative;
-        top: 280px;
-      }
+
     .aside-text__subtitle {
         font-size: 15px;
     }
@@ -99,7 +97,7 @@
         font-size: 40px;
     }
   
-    .aside-section {
+    .aside-grid-section {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         height: 200px;
