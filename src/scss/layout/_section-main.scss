@@ -43,3 +43,18 @@
     background-color: vars.$color-text-white;
     margin: 20px;
 }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+.main-container {
+    padding: 0 50px;
+
+    }
+}
+
+@media (min-width: 1024px) {
+    .main-container {
+        padding: 0 50px;
+    
+        }
+}

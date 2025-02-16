@@ -9,123 +9,196 @@
     background-size: cover;
     background-position: 80% 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
     width: 100%;
-    
-    &__container {
+
+    &__container-text {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        
-        
-    }
+        gap: 20px;
+        }
     
-        &__container--text {
+    .container-text-title {
             display: flex;
             flex-direction: column;
             gap: 30px;
             align-items: center;
-            margin-top: 300px;
+            margin-top: 320px;
             margin-left: 50px;
             margin-right: 50px;
             text-align: center;
-        }
+            }
 
                 .text-title {
                 font-family: vars.$font-title;
                 color: vars.$color-text-white;
+                font-size: 40px;
+                line-height: 60px;
                 }
+
+        .container-text-par {
+            display: flex;
+            justify-content: center;
+            margin: 0 50px;
+            }
                 .text-par {
                 font-family: vars.$font-main;
                 color: vars.$color-text-white;
+                text-align: center;
+                font-size: 20px;
                 }
 
-            &__container--scroll {
+    &__container-scroll {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        position: relative;
+        top: 50px;
+        margin: 0px auto;
+        }        
+            .button-down {
+            margin-top: 0px;
+            border: none;
+            border-radius: 50%;
+            height: 50px;
+            width: 50px;               
+            }
+
+            .scroll-down {
+            display: flex;
+            position: relative;
+            z-index: 1;
+            width: 70%;
+            bottom: 36px;
+            left: 7.5px;
+            }
+
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+        .hero {
+            height: 70vh;
+            background-position: 50% 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            &__container-text {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+                width: 60%;
+
+                }
+                .container-text-title {
+
+                    }
+                    .text-title {
+                        font-size: 60px;
+                        line-height: 80px;
+                    }
+                 .container-text-par {
+                  
+                    }
+                    .text-par {
+                        font-size: 25px;
+                        }
+
+            &__container-scroll {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                margin-top: 10px;
-                
+                margin-top: -30px;
             }        
+            
+             .button-down {
+                margin-top: 0px;
+                border: none;
+                border-radius: 50%;
+                height: 50px;
+                width: 50px;              
+                }
 
-                    .button-down {
+             .scroll-down {
+                display: flex;
+                position: relative;
+                width: 70%;
+                bottom: 36px;
+                left: 7.5px;
+                }       
+        }
+
+    }
+
+@media (min-width: 1024px) {
+ 
+
+    .hero {
+        color: vars.$color-text-white;
+        height: 100vh;
+        background-position: 0px 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &__container-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 0px;
+            width: 70%;
+            margin-top: 150px;
+            }
+
+            .container-text-title {
+
+            }
+            .text-title {
+                font-size: 60px;
+                line-height: 80px;
+            }
+         .container-text-par {
+          
+            }
+            .text-par {
+                font-size: 25px;
+                }
+
+        &__container-scroll {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 250px;
+            position: relative;
+            }        
+                
+                 .button-down {
                     margin-top: 0px;
                     border: none;
                     border-radius: 50%;
                     height: 50px;
                     width: 50px;              
                     }
-
-                    .scroll-down {
+    
+                 .scroll-down {
                     display: flex;
                     position: relative;
-                    z-index: 1;
                     width: 70%;
                     bottom: 36px;
                     left: 7.5px;
-                    }
+                    }             
+        }        
+              
+    }
 
-}
 
-@media (min-width: 768px) {
 
-    .text-title {
-        font-size: 80px;
-        }
-        .text-par {
-            font-size: 30px;
-        }
-        .hero {
-            color: vars.$color-text-white;
-            height: 70vh;
-            background-image: url(/images/cover.jpeg);
-            background-repeat: no-repeat;
-            background-size: ccover;
-            background-position: 50% 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
 
-            &__container--scroll {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-top: 10px;
-                
-            }        
-
-                    .button-down {
-                    margin-top: 0px;
-                    border: none;
-                    border-radius: 50%;
-                    height: 60px;
-                    width: 60px;              
-                    }
-
-                    .scroll-down {
-                    display: flex;
-                    position: relative;
-                    z-index: 1;
-                    width: 70%;
-                    bottom: 40px;
-                    left: 9px;
-                    }
-            
-        }
-        .container-text-par {
-            width: 60%;
-        }
-
-        .button-down {
-            margin-top: 0px;
-            border: none;
-            border-radius: 50%;
-            height: 70px;
-            width: 70px;              
-            }
-
-           
-
-}
