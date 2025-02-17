@@ -76,13 +76,9 @@
             background-color: vars.$color-text-white;
             border: 3px solid vars.$color-buttons;
             transform: scale(1.2);
+            color: vars.$color-buttons;
             }
             
-            a {
-                &:hover {
-                    color: vars.$color-buttons;}
-
-            }
     }
   
     .aside-arrow {
@@ -111,10 +107,6 @@
     }
   
     .aside-grid-section {
-       /*  display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        height: 200px;
-        padding-top: 50px; */
         
             display: grid;
             grid-template-columns: 250px 250px 250px;
